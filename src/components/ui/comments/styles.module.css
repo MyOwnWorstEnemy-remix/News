@@ -1,3 +1,12 @@
+.commentSection {
+    padding: 40px;
+    font-family: "Inter", "Arial", sans-serif;
+    text-align: center;
+    width: 80%;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+  }
+
 .commentWrapper {
     display: flex;
     gap: 20px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
 import ScrollTop from "../ui/scroll-top/scroll-top";
 import styles from "./styles.module.css";
@@ -11,8 +11,8 @@ import {Comment} from "../mocks/comments";
 type CommentsType = {comments: Comment[]};
 
 function CommentOr404({ comments }: CommentsType) {
-  const { code } = useParams();
-  const comment = comments.find((comment) => comment.id.toString() === code);
+  const { id } = useParams();
+  const comment = comments.find((comment) => comment.id.toString() === id);
   return comment ? (
     <CommentPage {...comment} />
   ) : (
@@ -20,7 +20,14 @@ function CommentOr404({ comments }: CommentsType) {
   );
 }
 
+const [value,setValue] = useState({});
+
+const refresh = ()=>{
+  setValue({});
+}
+
 function App() {
+  setTimeout(refresh, 3000);
   return (
     <>
       <div className={styles.bodyWrapper}>

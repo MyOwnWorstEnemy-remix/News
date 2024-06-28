@@ -4,19 +4,19 @@ import CommentList from "../../blocks/comment-list/comment-list";
 import styles from "./styles.module.css"; 
 
 function Comments ( comment: Comment ) {
-
-    if(comment.moreComments) {};
     return (<>
-        <div className={styles.commentWrapper}>
-            <a className={styles.commentLink} href={comment.authorLink}>{comment.author}</a>
-            <p className={styles.commentScore}>score {comment.score}</p>
-        </div>
-        <p  className={styles.commentText}>{comment.text}</p>
-        {comment.moreComments ? (
-            <div className={styles.innerComments}>
-                <CommentList comments = {comment.moreComments}/>
+        <section className={styles.commentSection}>
+            <div className={styles.commentWrapper}>
+                <a className={styles.commentLink} href={comment.authorLink}>{comment.author}</a>
+                <p className={styles.commentScore}>score {comment.score}</p>
             </div>
-        ) : null}
+            <p  className={styles.commentText}>{comment.text}</p>
+            {comment.moreComments ? (
+                <div className={styles.innerComments}>
+                    <CommentList comments = {comment.moreComments}/>
+                </div>
+            ) : null}
+         </section>
     </>);
 }
 

@@ -7,7 +7,6 @@ type Props = {comments: Comment[]};
 
 function CommentList({ comments }: Props) {
   return comments ? (
-    <section className={styles.newsSection}>
       <ul className={styles.list}>
         {comments.map((comment) => (
           <li className={styles.listItem} key={comment.id}>
@@ -15,9 +14,7 @@ function CommentList({ comments }: Props) {
           </li>
         ))}
       </ul>
-      
-    </section>
-  ) : null;
+    ) : null;
 }
 
 export default CommentList;

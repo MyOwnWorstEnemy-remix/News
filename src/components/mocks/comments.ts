@@ -14,6 +14,21 @@ const comments: Comment[] = [
       author: "omoikane",
       authorLink: "#",
       text: "Imperdiet pulvinar mauris cras ipsum vel velit urna nec eleifend efficitur sapien sapien lectus et. Ornare mollis orci, integer sodales dui mattis malesuada ut. Arcu hac ornare quis, amet, ex. Augue velit leo, aenean et sit in accumsan dui sodales non nunc sit nulla augue odio. Imperdiet mollis mauris lectu.",
+      moreComments: [{
+        id: 1,
+        score: 229,
+        author: "omoikane",
+        authorLink: "#",
+        text: "Imperdiet pulvinar mauris cras ipsum vel velit urna nec eleifend efficitur sapien sapien lectus et. Ornare mollis orci, integer sodales dui mattis malesuada ut. Arcu hac ornare quis, amet, ex. Augue velit leo, aenean et sit in accumsan dui sodales non nunc sit nulla augue odio. Imperdiet mollis mauris lectu.",
+      },
+      {
+        id: 2,
+        score: 229,
+        author: "omoikane",
+        authorLink: "#",
+        text: "Imperdiet pulvinar mauris cras ipsum vel velit urna nec eleifend efficitur sapien sapien lectus et. Ornare mollis orci, integer sodales dui mattis malesuada ut. Arcu hac ornare quis, amet, ex. Augue velit leo, aenean et sit in accumsan dui sodales non nunc sit nulla augue odio. Imperdiet mollis mauris lectu.",
+      },
+      ]
     },
     {
       id: 1,

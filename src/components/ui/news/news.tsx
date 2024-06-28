@@ -10,7 +10,7 @@ function News ( pieceOfNews: PieceOfNews ) {
         </h3>
         <div className={styles.newsWrapper}>
             <p className={styles.newsScore}>{pieceOfNews.score} points by <a className={styles.newsLink} href="#">{pieceOfNews.author}</a></p>
-            <Link className={styles.newsLink} to={`/comment:${pieceOfNews.commentId}`}>comments</Link>
+            <Link className={styles.newsLink} to={`/comment/${pieceOfNews.commentId}`}>comments</Link>
         </div>
     </>);
 }
