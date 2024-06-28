@@ -1,0 +1,27 @@
+.newsSection {
+    padding: 40px;
+    font-family: "Inter", "Arial", sans-serif;
+    text-align: center;
+  }
+
+.sectionTitle {
+    color: #1e90ff;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 80%;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+  }
+
+.listItem {
+    margin: 0;
+    padding: 10px;
+  }
+  
