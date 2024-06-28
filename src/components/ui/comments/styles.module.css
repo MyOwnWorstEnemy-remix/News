@@ -1,0 +1,19 @@
+.commentWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.commentLink {
+    text-decoration: none;
+    color: #000000;
+    margin: 0;
+}
+
+.commentScore {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.commentText {
+    text-align: left;
+}

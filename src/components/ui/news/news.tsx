@@ -8,9 +8,8 @@ function News ( pieceOfNews: PieceOfNews ) {
             <a className={styles.newsLink} href={pieceOfNews.link}>{pieceOfNews.title}</a>
         </h3>
         <div className={styles.newsWrapper}>
-            <p>{pieceOfNews.score} points by
-                <a className={styles.newsLink} href="#">{pieceOfNews.author}</a>
-            </p>
+            <p className={styles.newsScore}>{pieceOfNews.score} points by <a className={styles.newsLink} href="#">{pieceOfNews.author}</a></p>
+            <a className={styles.newsLink} href="#">comments</a>
         </div>
     </>);
 }
