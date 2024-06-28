@@ -1,15 +1,13 @@
 import React from "react";
-import CommentList from "../../blocks/comment-list/comment-list";
 import styles from "./styles.module.css"; 
 import {Comment} from "../../mocks/comments";
+import Comments from "components/ui/comments/comments";
 
-type Props = {comments: Comment[]};
-
-function CommentPage({ comments }: Props) {
+function CommentPage( comment: Comment) {
   return (
     <>
-      <h2 className={styles.sectionTitle}>Комментарии</h2>
-      <CommentList comments = {comments}/>
+      <h2 className={styles.sectionTitle}>Комментарий </h2>
+      <Comments {...comment}/>
     </>
   );
 }

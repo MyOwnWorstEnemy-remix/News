@@ -6,7 +6,7 @@ import {Comment} from "../../mocks/comments";
 type Props = {comments: Comment[]};
 
 function CommentList({ comments }: Props) {
-  return comments && comments.length ? (
+  return comments ? (
     <section className={styles.newsSection}>
       <ul className={styles.list}>
         {comments.map((comment) => (
@@ -15,6 +15,7 @@ function CommentList({ comments }: Props) {
           </li>
         ))}
       </ul>
+      
     </section>
   ) : null;
 }

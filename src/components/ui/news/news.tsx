@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {PieceOfNews} from "../../mocks/news";
 import styles from "./styles.module.css"; 
 
@@ -9,7 +10,7 @@ function News ( pieceOfNews: PieceOfNews ) {
         </h3>
         <div className={styles.newsWrapper}>
             <p className={styles.newsScore}>{pieceOfNews.score} points by <a className={styles.newsLink} href="#">{pieceOfNews.author}</a></p>
-            <a className={styles.newsLink} href="#">comments</a>
+            <Link className={styles.newsLink} to={`/comment:${pieceOfNews.commentId}`}>comments</Link>
         </div>
     </>);
 }
