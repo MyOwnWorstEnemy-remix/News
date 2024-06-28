@@ -9,7 +9,6 @@ const LIMIT = 15;
 type Props = {news: PieceOfNews[]};
 
 function NewsList({ news }: Props) {
-
   const [postData, setPostData] = useState(news.slice(0, LIMIT));
   const [visible, setVisible] = useState(LIMIT);
   const [hasMore, setHasMore] = useState(true);
@@ -30,7 +29,6 @@ function NewsList({ news }: Props) {
 
   return news && news.length ? (
     <section className={styles.newsSection}>
-      {/* <h2 className={classNames(styles.sectionTitle)}>Новости</h2> */}
       <h2 className={styles.sectionTitle}>Новости</h2>
       <ul className={styles.list}>
         <InfiniteScroll

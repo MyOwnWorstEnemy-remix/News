@@ -20,14 +20,8 @@ function CommentOr404({ comments }: CommentsType) {
   );
 }
 
-const [value,setValue] = useState({});
-
-const refresh = ()=>{
-  setValue({});
-}
 
 function App() {
-  setTimeout(refresh, 3000);
   return (
     <>
       <div className={styles.bodyWrapper}>
